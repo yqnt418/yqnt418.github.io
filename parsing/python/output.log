@@ -2319,50 +2319,764 @@ Name(id='traceback', ctx=Load())
 
 Function call: LogMgr
 Function call: SOPQueryApi
-Method call: config_util.get_db_config
-Method call: aes_util.decrypt
-Method call: config_util.get_db_config
-Method call: aes_util.decrypt
-Method call: config_util.get_db_config
-Method call: config_util.get_db_config
-Method call: config_util.get_db_config
-Method call: config_util.get_first_config
+Method call on config_util: get_db_config
+Method call on aes_util: decrypt
+Method call on config_util: get_db_config
+Method call on aes_util: decrypt
+Method call on config_util: get_db_config
+Method call on config_util: get_db_config
+Method call on config_util: get_db_config
+Method call on config_util: get_first_config
 Function: flight_statistics_checklist
-Method call: logger.debug
-Method call: config_util.get_current_config
-Method call: config_util.get_current_config
-Method call: sheet_name_list.items
-'Subscript' object has no attribute 'id'
-Traceback (most recent call last):
-  File "C:\Users\tian.liu\Desktop\python_ast\ana.py", line 74, in <module>
-    visitor.visit(parsed_ast)
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 407, in visit
-    return visitor(node)
-           ^^^^^^^^^^^^^
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 415, in generic_visit
-    self.visit(item)
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 407, in visit
-    return visitor(node)
-           ^^^^^^^^^^^^^
-  File "C:\Users\tian.liu\Desktop\python_ast\ana.py", line 20, in visit_FunctionDef
-    self.generic_visit(node)  # 继续访问函数内的节点
-    ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 415, in generic_visit
-    self.visit(item)
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 407, in visit
-    return visitor(node)
-           ^^^^^^^^^^^^^
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 415, in generic_visit
-    self.visit(item)
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 407, in visit
-    return visitor(node)
-           ^^^^^^^^^^^^^
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 417, in generic_visit
-    self.visit(value)
-  File "C:\Users\tian.liu\AppData\Local\Programs\Python\Python312\Lib\ast.py", line 407, in visit
-    return visitor(node)
-           ^^^^^^^^^^^^^
-  File "C:\Users\tian.liu\Desktop\python_ast\ana.py", line 29, in visit_Call
-    print(f"Method call: {node.func.value.id}.{node.func.attr}")
-                          ^^^^^^^^^^^^^^^^^^
-AttributeError: 'Subscript' object has no attribute 'id'
+Method call on logger: debug
+Method call on config_util: get_current_config
+Method call on config_util: get_current_config
+Method call on sheet_name_list: items
+Method call on <expression>: items
+Method call on value: items
+Function call: float
+Function call: float
+Function call: float
+Function call: float
+Method call on logger: debug
+Method call on sop_queryApi: merge_into_statistics_checklist
+Method call on logger: debug
+Function: flight_statistics_headset
+Method call on logger: debug
+Method call on json: load
+Function call: open
+Method call on config_util: get_current_config
+Method call on sop_config: items
+Function call: len
+Method call on logger: debug
+Method call on <expression>: items
+Function call: len
+Method call on logger: debug
+Method call on <expression>: items
+Function call: len
+Method call on logger: debug
+Method call on logger: debug
+Method call on sop_queryApi: merge_into_statistics_headset
+Function call: float
+Function call: float
+Method call on logger: debug
+Function: refresh_statistics_checklist
+Method call on sop_queryApi: QuerySopsByFlight
+Function call: len
+Function call: flight_statistics_checklist
+Function: refresh_statistics_headset
+Method call on sop_queryApi: query_flight_item_for_statistics_headset
+Function call: len
+Method call on sop_queryApi: query_statistics_headset
+Function call: len
+Method call on sop_queryApi: merge_into_statistics_headset
+Function call: float
+Function: refresh_statistics_checklist_by_date
+Method call on sop_queryApi: QuerySops
+Function call: flight_statistics_checklist
+Function: refresh_statistics_headset_by_date
+Method call on logger: debug
+Method call on sop_queryApi: query_flight_item_for_statistics_headset_by_date
+Method call on jumpingPoints: replace
+Method call on <expression>: join
+Method call on config_util: get_SOPReportsSimple_folder
+Method call on <expression>: exists
+Method call on json: load
+Function call: open
+Function call: get_encoding_type
+Method call on sop: items
+Function call: len
+Method call on logger: debug
+Method call on sop_queryApi: merge_into_statistics_headset
+Function call: float
+Function call: float
+Function: postTask
+Method call on logger: debug
+Method call on os: getpid
+Method call on pcon: send
+Method call on logger: info
+Method call on logger: debug
+Function call: jump_point_main
+Method call on config_util: get_jumpdef_file
+Method call on logger: info
+Method call on logger: debug
+Function call: parseAsr
+Method call on logger: debug
+Method call on logger: debug
+Function call: mergeText
+Method call on logger: debug
+Method call on logger: debug
+Function call: mergeText
+Method call on logger: debug
+Method call on logger: debug
+Function call: text_process
+Method call on config_util: get_current_config
+Method call on config_util: get_current_config
+Method call on logger: debug
+Method call on logger: debug
+Function call: text_process
+Method call on config_util: get_current_config
+Method call on config_util: get_current_config
+Method call on logger: debug
+Method call on config_util: get_current_key
+Method call on sop_queryApi: query_sop_config
+Method call on sop_queryApi: query_special_config
+Method call on logger: info
+Method call on SopKMApi: sop_jump_report
+Method call on config_util: get_current_config
+Method call on config_util: get_current_config
+Method call on config_util: get_current_config
+Method call on logger: debug
+Method call on logger: info
+Method call on SopKMApi: sop_jump_report
+Method call on config_util: get_current_config
+Method call on config_util: get_current_config
+Method call on config_util: get_current_config
+Method call on logger: debug
+Function call: str
+Function call: str
+Function call: str
+Method call on logger: info
+Method call on logger: debug
+Function call: updateWarnings
+Method call on <expression>: join
+Method call on logger: debug
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on traceback: format_exc
+Method call on logger: debug
+Method call on logger: debug
+Method call on json: dumps
+Function call: dict
+Method call on <expression>: exists
+Method call on os: mkdir
+Function call: open
+Method call on res_f: write
+Method call on json: dumps
+Function call: dict
+Function call: flight_statistics_checklist
+Function call: flight_statistics_headset
+Function call: str
+Method call on logger: error
+Method call on logger: error
+Method call on <expression>: format
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: debug
+Function: flightnum_check
+Method call on re: match
+Method call on config_util: get_first_config
+Method call on flightnum: replace
+Method call on config_util: get_first_config
+Method call on <expression>: index
+Method call on config_util: get_first_config
+Method call on <expression>: format
+Function call: Exception
+Function: parseJson
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Function call: isinstance
+Method call on <expression>: format
+Method call on logger: error
+Function call: Exception
+Function call: len
+Function call: len
+Method call on <expression>: format
+Function call: len
+Method call on logger: error
+Function call: Exception
+Method call on <expression>: join
+Method call on config_util: get_sharedPath
+Method call on config_util: get_textDecoded_folder
+Function call: enumerate
+Function call: len
+Method call on <expression>: join
+Method call on <expression>: exists
+Method call on <expression>: format
+Method call on logger: error
+Function call: Exception
+Method call on <expression>: format
+Method call on logger: error
+Function call: Exception
+Method call on data: get
+Function call: isinstance
+Function call: len
+Method call on <expression>: format
+Method call on logger: error
+Function call: Exception
+Method call on <expression>: join
+Method call on config_util: get_sharedPath
+Method call on <expression>: join
+Method call on <expression>: exists
+Method call on <expression>: format
+Method call on logger: error
+Function call: Exception
+Method call on data: get
+Function call: isinstance
+Function call: len
+Method call on <expression>: format
+Method call on logger: error
+Function call: Exception
+Function call: flightnum_check
+Method call on data: get
+Function call: isinstance
+Function call: len
+Method call on <expression>: format
+Method call on logger: error
+Function call: Exception
+Method call on <expression>: strptime
+Method call on datetime: timedelta
+Method call on config_util: get_time_utc_gap
+Method call on t_start: strftime
+Method call on <expression>: replace
+Method call on audioStartTime: replace
+Method call on <expression>: join
+Method call on config_util: get_sharedPath
+Method call on config_util: get_jumpingPoints_folder
+Method call on <expression>: join
+Method call on config_util: get_sharedPath
+Method call on config_util: get_text_folder
+Method call on <expression>: join
+Method call on config_util: get_sharedPath
+Method call on config_util: get_SOPReports_folder
+Method call on <expression>: join
+Method call on config_util: get_sharedPath
+Method call on config_util: get_SOPReportsSimple_folder
+Method call on <expression>: exists
+Method call on os: mkdir
+Function call: str
+Method call on logger: error
+Method call on logger: error
+Method call on <expression>: format
+Function call: str
+Method call on traceback: format_exc
+Function: updateWarnings
+Method call on warnings: extend
+Function call: updateCheckRateWarning
+Method call on warnings: extend
+Method call on logger: debug
+Function: getSOPResult
+Function call: dict
+Function call: open
+Method call on config_util: get_current_config
+Function call: get_encoding_type
+Method call on config_util: get_current_config
+Method call on json: load
+Method call on sop_meta: keys
+Method call on <expression>: keys
+Method call on <expression>: keys
+Function call: open
+Function call: get_encoding_type
+Method call on json: load
+Method call on sop_result: values
+Function call: isinstance
+Function: updateCheckRateWarning
+Function call: open
+Method call on config_util: get_config_file_path
+Method call on json: load
+Method call on checklist_list: keys
+Method call on checklist_list: items
+Method call on duration_check_list: extend
+Function call: getSOPResult
+Method call on flight_sop: items
+Method call on checklist_list: items
+Method call on warnings: append
+Method call on sheet_name_list: items
+Method call on duration_check_count: items
+Method call on warnings: append
+Function call: int
+Function: parseAsr
+Method call on logger: info
+Function call: len
+Method call on json: load
+Function call: open
+Function call: get_encoding_type
+Method call on json: load
+Function call: open
+Function call: get_encoding_type
+Method call on copy: deepcopy
+Method call on logger: info
+Function call: len
+Function call: len
+Method call on json: load
+Function call: open
+Function call: get_encoding_type
+Method call on asr_parse: append
+Method call on logger: info
+Function call: len
+Method call on copy: deepcopy
+Method call on logger: info
+Function call: len
+Function: mergeText
+Function call: merging
+Function call: len
+Function call: merging
+Method call on logger: debug
+Method call on <expression>: exists
+Method call on os: mkdir
+Method call on <expression>: split
+Method call on filename: split
+Method call on upid: split
+Method call on <expression>: join
+Method call on logger: debug
+Function call: open
+Method call on merge: write
+Method call on json: dumps
+Function: taskNumber
+Function call: len
+Function call: range
+Function call: len
+Function call: range
+Function call: len
+Function: killpro
+Method call on task: get
+Method call on task: get
+Method call on task_list: index
+Function: responseFormat
+Function call: make_response
+Function call: str
+Function: create_app
+Method call on logger: info
+Function call: Flask
+Function: postProcessingTask
+Method call on logger: info
+Method call on logger: debug
+Function call: enumerate
+Method call on logger: debug
+Function call: taskNumber
+Method call on logger: debug
+Method call on <expression>: format
+Method call on config_util: get_maxtask
+Method call on request: get_json
+Method call on logger: info
+Method call on <expression>: format
+Function call: parseJson
+Method call on iataCode: isspace
+Function call: responseFormat
+Method call on logger: error
+Method call on <expression>: format
+Method call on sopType: isspace
+Function call: responseFormat
+Method call on logger: error
+Method call on <expression>: format
+Method call on config_util: set_current_key
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on logger: debug
+Method call on multiprocessing: Pipe
+Method call on multiprocessing: Process
+Method call on process: start
+Method call on ccon: recv
+Method call on task_list: append
+Function call: responseFormat
+Method call on logger: info
+Function call: responseFormat
+Method call on logger: error
+Function call: responseFormat
+Method call on logger: error
+Method call on <expression>: format
+Function call: str
+Function call: responseFormat
+Method call on logger: error
+Method call on <expression>: format
+Function call: str
+Method call on traceback: format_exc
+Method call on app: route
+Function: getProcessingTask
+Method call on logger: info
+Method call on re: match
+Function call: Exception
+Method call on logger: debug
+Function call: taskNumber
+Method call on logger: debug
+Method call on logger: warn
+Method call on <expression>: exists
+Method call on logger: error
+Function call: open
+Method call on json: loads
+Method call on res_f: read
+Function call: dict
+Method call on logger: info
+Method call on logger: info
+Function call: killpro
+Method call on pro_name: terminate
+Method call on task_list: pop
+Method call on logger: debug
+Method call on <expression>: format
+Method call on pro_name: is_alive
+Function call: killpro
+Method call on logger: debug
+Method call on logger: debug
+Method call on pro_name: is_alive
+Method call on logger: error
+Method call on logger: error
+Method call on logger: error
+Method call on task_list: pop
+Function call: responseFormat
+Function call: responseFormat
+Method call on logger: info
+Method call on logger: info
+Method call on logger: info
+Function call: killpro
+Method call on pro_name: terminate
+Method call on task_list: pop
+Method call on logger: debug
+Method call on <expression>: format
+Method call on pro_name: is_alive
+Function call: responseFormat
+Method call on logger: info
+Method call on <expression>: format
+Function call: responseFormat
+Method call on logger: info
+Method call on logger: error
+Method call on logger: error
+Method call on logger: error
+Function call: killpro
+Method call on logger: error
+Method call on logger: error
+Method call on pro_name: terminate
+Method call on task_list: pop
+Method call on logger: error
+Method call on logger: error
+Method call on pro_name: is_alive
+Method call on logger: debug
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Function call: responseFormat
+Method call on app: route
+Function: getvsProcessingTask
+Method call on logger: info
+Function call: responseFormat
+Method call on logger: info
+Method call on app: route
+Function: getErrorTraceback
+Method call on logger: info
+Function call: taskNumber
+Method call on <expression>: exists
+Function call: open
+Method call on json: loads
+Method call on res_f: read
+Function call: dict
+Function call: responseFormat
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Function call: responseFormat
+Method call on app: route
+Function: heart_beating_for_xiamen_post
+Method call on logger: info
+Method call on app: route
+Function: heart_beating_for_xiamen_get
+Method call on logger: info
+Method call on app: route
+Function: get_flight_sop_report
+Method call on uuid: uuid4
+Method call on time: time
+Method call on time: time
+Method call on logger: info
+Method call on logger: info
+Method call on request: get_json
+Method call on logger: info
+Function call: str
+Method call on data: get
+Function call: str
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Function call: type
+Method call on iataCode: isspace
+Method call on iataCode: split
+Method call on sopType: isspace
+Method call on logger: info
+Method call on sop_queryApi: QuerySops
+Method call on logger: debug
+Function call: len
+Method call on time: time
+Method call on logger: info
+Method call on start_date: replace
+Method call on end_date: replace
+Function call: len
+Method call on config_util: get_current_key
+Method call on iataCodeList: append
+Function call: create_flight_sop_reoprt
+Method call on config_util: get_config
+Method call on config_util: get_config
+Method call on config_util: get_SOPReports_folder
+Method call on time: time
+Method call on logger: info
+Method call on time: time
+Method call on logger: info
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on traceback: format_exc
+Method call on app: route
+Function: get_sensitive_word_report
+Method call on uuid: uuid4
+Method call on time: time
+Method call on logger: info
+Method call on logger: info
+Method call on request: get_json
+Method call on logger: info
+Function call: str
+Method call on data: get
+Function call: str
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Function call: type
+Method call on iataCode: isspace
+Method call on iataCode: split
+Method call on sop_queryApi: query_keyword_config
+Function call: len
+Function call: list
+Method call on keyword_config: values
+Method call on sop_queryApi: QueryFlights
+Method call on logger: debug
+Method call on logger: debug
+Function call: len
+Method call on logger: debug
+Function call: len
+Method call on start_date: replace
+Method call on end_date: replace
+Function call: len
+Method call on config_util: get_current_key
+Method call on iataCodeList: append
+Function call: create_sensitive_words_reoprt
+Method call on time: time
+Method call on logger: info
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
+Function: get_checklist_duration_report
+Method call on uuid: uuid4
+Method call on time: time
+Method call on logger: info
+Method call on logger: info
+Method call on request: get_json
+Method call on logger: info
+Function call: str
+Method call on data: get
+Function call: str
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Function call: type
+Method call on iataCode: isspace
+Method call on iataCode: split
+Method call on sop_queryApi: QuerySops
+Method call on start_date: replace
+Method call on end_date: replace
+Function call: len
+Method call on config_util: get_current_key
+Method call on iataCodeList: append
+Function call: create_checklist_duration_reoprt
+Method call on time: time
+Method call on logger: info
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
+Function: get_checklist_median_route
+Method call on uuid: uuid4
+Method call on time: time
+Method call on logger: info
+Method call on logger: info
+Method call on logger: info
+Method call on data: get
+Function call: type
+Method call on iataCode: isspace
+Method call on iataCode: split
+Method call on data: get
+Method call on data: getlist
+Function call: str
+Method call on data: get
+Function call: str
+Method call on data: get
+Method call on data: getlist
+Method call on data: get
+Method call on sop_queryApi: query_checklist_flights
+Function call: get_checklist_median
+Method call on logger: info
+Method call on time: time
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
+Function: get_headset_wear_report
+Method call on uuid: uuid4
+Method call on time: time
+Method call on logger: info
+Method call on logger: info
+Method call on request: get_json
+Method call on logger: info
+Function call: str
+Method call on data: get
+Function call: str
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Function call: type
+Method call on iataCode: isspace
+Method call on iataCode: split
+Method call on sop_queryApi: QuerySops
+Method call on logger: info
+Function call: len
+Method call on start_date: replace
+Method call on end_date: replace
+Function call: len
+Method call on config_util: get_current_key
+Method call on iataCodeList: append
+Function call: generateSummarys
+Function call: create_headset_wear_reoprt
+Method call on logger: info
+Method call on time: time
+Method call on logger: info
+Method call on logger: error
+Method call on uuid: uuid1
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
+Function: get_headset_wear_data_router
+Method call on uuid: uuid4
+Method call on time: time
+Method call on logger: info
+Method call on logger: info
+Method call on logger: info
+Method call on data: get
+Function call: type
+Method call on iataCode: isspace
+Method call on iataCode: split
+Method call on data: get
+Method call on data: getlist
+Function call: str
+Method call on data: get
+Function call: str
+Method call on data: get
+Method call on data: getlist
+Method call on data: get
+Method call on sop_queryApi: query_headset_wear_flights
+Function call: dict
+Method call on logger: info
+Method call on time: time
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
+Function: refresh_flight_statistics
+Method call on uuid: uuid4
+Method call on logger: info
+Method call on logger: info
+Method call on logger: info
+Function call: refresh_statistics_checklist
+Function call: refresh_statistics_headset
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
+Function: refresh_flight_statistics_by_date
+Method call on uuid: uuid4
+Method call on logger: info
+Method call on logger: info
+Method call on logger: info
+Method call on data: get
+Method call on data: get
+Function call: refresh_statistics_checklist_by_date
+Function call: refresh_statistics_headset_by_date
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
+Function: delete_flight_statistics
+Method call on uuid: uuid4
+Method call on logger: info
+Method call on logger: info
+Method call on request: get_json
+Method call on logger: info
+Method call on data: get
+Method call on sop_queryApi: delete_statistics_by_flights
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
+Function: get_keyword_match_data
+Method call on uuid: uuid4
+Method call on time: time
+Method call on time: time
+Method call on logger: info
+Method call on logger: info
+Method call on request: get_json
+Method call on logger: info
+Function call: str
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Method call on data: get
+Function call: get_keyword_match_json
+Method call on time: time
+Method call on logger: info
+Method call on logger: error
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on traceback: format_exc
+Method call on app: route
+Function: refresh_keyword_match_result
+Method call on uuid: uuid4
+Method call on logger: info
+Method call on logger: info
+Method call on logger: info
+Method call on data: get
+Method call on data: get
+Method call on sop_queryApi: QueryFlightsViaDate
+Method call on sop_queryApi: query_keyword_config
+Function call: get_keyword_match_json
+Method call on result: append
+Function call: str
+Method call on traceback: format_exc
+Method call on logger: error
+Method call on app: route
