@@ -26,7 +26,8 @@ class Visitor(ast.NodeVisitor):
             print(f"Function call: {node.func.id}")
         elif isinstance(node.func, ast.Attribute):
             # 如果调用的是类的方法，打印类名和方法名
-            print(f"Method call: {node.func.value.id}.{node.func.attr}")
+            # print(f"Method call: {node.func}.{node.func.attr}")
+            print(f"Method call on {node.func.value.id if isinstance(node.func.value, ast.Name) else '<expression>'}: {node.func.attr}")
         self.generic_visit(node)  # 继续访问函数调用内的节点
 
 
