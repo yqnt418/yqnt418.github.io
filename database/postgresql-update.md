@@ -1,4 +1,4 @@
-# 利用临时表进行update
+# 利用临时表进行 批量 update
 ```
 # 创建临时表 tmp
 CREATE TEMPORARY TABLE tmp("name" text, "checked" BOOLEAN, "begin" numeric, "end" numeric);
